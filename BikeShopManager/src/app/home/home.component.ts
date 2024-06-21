@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
 
   //creamos un getter para que nos sea mas comodo y prolijo acceder a cada
   // uno de los formControls desde el template (home.componenthtml)
-  get controles() {
+  get controles() { //Esto permite hacer una llamada
     return this.bikeForm.controls;
   }
 
