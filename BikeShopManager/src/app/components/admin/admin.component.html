@@ -1,0 +1,18 @@
+<p>admin works!</p>
+
+<div>
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <td>Owner Name</td>
+      <td>Email</td>
+      <td>Model</td>
+      <td class="text-right">Purchase price</td>
+    </tr>
+    <tr *ngFor="let bike of bikes">
+      <td>{{bike.name}}</td>
+      <td>{{bike.email}}</td>
+      <td>{{bike.model}}</td>
+      <td class="text-right">{{bike.purchasePrice}}</td>
+    </tr>
+  </table>
+</div>

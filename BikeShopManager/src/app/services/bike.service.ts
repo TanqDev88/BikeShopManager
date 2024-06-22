@@ -1,5 +1,11 @@
-import { HttpClient } from '@angular/common/http'; //importo la libreria httpClient
+import { HttpClient, HttpHeaders } from '@angular/common/http'; //importo la libreria httpClient
 import { Injectable } from '@angular/core';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json'
+  })
+}
 
 @Injectable({
   providedIn: 'root'
