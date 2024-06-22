@@ -11,8 +11,12 @@
       </div>
       <!-- mostramos mensaje de error indicando al user que la entrada es erronea -->
       <div *ngIf="controles['name'].errors?.['pattern']">
-          <p style="color: red;">Username Invalid example :asdasdas_123</p>
+          <p style="color: red;">Buyer Name Invalid example :asdasdas_123</p>
       </div>
+
+      <div *ngIf="(controles['name'].touched) && controles['name'].errors?.['required']">
+        <p style="color: red;">Buyer Name Required Field</p>
+    </div>
 
       <div class="form-group">
           <label>Email</label>
@@ -23,6 +27,11 @@
       <div *ngIf="controles['email'].errors?.['email']">
           <p style="color: red;">Email Invalid</p>
       </div>
+
+      <div *ngIf="(controles['name'].touched) && controles['name'].errors?.['required']">
+        <p style="color: red;">Email Required Field</p>
+    </div>
+
 
       <div class="form-group">
           <label>Phone</label>
