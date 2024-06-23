@@ -7,13 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './components/admin/admin.component';
 import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
+import { FilterimagesPipe } from './pipes/filterimages.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AdminComponent,
-    ImageGalleryComponent
+    ImageGalleryComponent,
+    FilterimagesPipe
   ],
   imports: [
     BrowserModule,

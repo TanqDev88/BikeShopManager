@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Bike } from 'src/app/models/bike';
-import { ImagesService } from 'src/app/services/images.service';
+import { Bike } from '../../models/bike';
+import { ImagesService } from '../../services/images.service';
 
 @Component({
   selector: 'app-image-gallery',
