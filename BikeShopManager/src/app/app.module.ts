@@ -9,6 +9,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
 import { FilterimagesPipe } from './pipes/filterimages.pipe';
 import { AboutComponent } from './components/about/about.component';
+import { ImageDetailsComponent } from './components/image-details/image-details.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AboutComponent } from './components/about/about.component';
     AdminComponent,
     ImageGalleryComponent,
     FilterimagesPipe,
-    AboutComponent
+    AboutComponent,
+    ImageDetailsComponent
   ],
   imports: [
     BrowserModule,
