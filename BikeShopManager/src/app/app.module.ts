@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './components/admin/admin.component';
 import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
 import { FilterimagesPipe } from './pipes/filterimages.pipe';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FilterimagesPipe } from './pipes/filterimages.pipe';
     HomeComponent,
     AdminComponent,
     ImageGalleryComponent,
-    FilterimagesPipe
+    FilterimagesPipe,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
