@@ -1,0 +1,47 @@
+<p>image-gallery works!</p>
+
+<div>
+  <div class="row">
+      <div class="col-sm-12 btn btn-primary">
+          Image Gallery
+      </div>
+  </div>
+  <div class="row" style="margin-top: 10px;margin-bottom: 10px;">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-2">
+          <button class="btn btn-success" (click)="filterBy='all'">Todos los Modelos</button>
+      </div>
+      <div class="col-sm-2">
+          <button class="btn btn-success" (click)="filterBy='bknenes'">Para Niños</button>
+      </div>
+      <div class="col-sm-2">
+          <button class="btn btn-success" (click)="filterBy='bkmotor'">Con motor</button>
+      </div>
+      <div class="col-sm-2">
+          <button class="btn btn-success" (click)="filterBy='adultosrc'">Para Adultos</button>
+      </div>
+      <div class="col-sm-2">
+          <button class="btn btn-success" (click)="filterBy='bkeco'">Bien Baratas</button>
+      </div>
+      <div class="col-sm-1">
+      </div>
+  </div>
+
+  <div class="row">
+      <ul>
+          <li *ngFor="let img of (allImages | filterimages : filterBy )">
+
+                  <img src="{{img.url}}" class="img" width="240" height="170">
+
+          </li>
+      </ul>
+  </div>
+</div>
+
+
+<!--
+{{ dateObj | date }}               // output is 'Jun 15, 2015' <br>
+{{ dateObj | date:'medium' }}      // output is 'Jun 15, 2015, 9:43:11 PM'<br>
+{{ dateObj | date:'shortTime' }}   // output is '9:43 PM'<br>
+{{ dateObj | date:'mm:ss' }}       // output is '43:11'<br> -->
