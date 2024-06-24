@@ -1,25 +1,44 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
+import { ImageDetailsComponent } from './components/image-details/image-details.component';
+import { AboutComponent } from './components/about/about.component';
+import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 
+
+//en este array vamos a definir las rutas de la app
 const routes: Routes = [
   {
-    path: 'home',//loclahost:4200/home
+    path: 'home',// localhost:4200/home
     component: HomeComponent
   },
   {
-    path: 'admin',//loclahost:4200/admin
+    path: 'admin',// localhost:4200/admin
+    component: ViewRegistrationComponent
+  },
+  {
+    path: 'admin/view/:id',// localhost:4200/admin/view/${idDeLaFilaQueSeHaceClick}
     component: AdminComponent
   },
   {
-    path: 'galeria',//loclahost:4200/galeria
-    component: AdminComponent
+    path: 'galeria',// localhost:4200/galeria
+    component: ImageGalleryComponent
   },
   {
-    path: 'image/id',//loclahost:4200/image/${idImagenQueSeHaceClick}
-    component: AdminComponent
-  }
+    path: 'image/:id',// localhost:4200/image/${idImagenQueSeHaceClick}
+    component: ImageDetailsComponent
+  },
+  {
+    path: 'home/:id',// localhost:4200/home/:id
+    component: HomeComponent
+  },
+  // {
+  //   path: '**',// localhost:4200/kajlsdgkjaskdkgjasd
+  //   component: AboutComponent
+  // },
+
 ];
 
 @NgModule({
