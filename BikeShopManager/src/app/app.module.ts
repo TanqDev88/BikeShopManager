@@ -10,6 +10,7 @@ import { ImageGalleryComponent } from './components/image-gallery/image-gallery.
 import { FilterimagesPipe } from './pipes/filterimages.pipe';
 import { AboutComponent } from './components/about/about.component';
 import { ImageDetailsComponent } from './components/image-details/image-details.component';
+import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ImageDetailsComponent } from './components/image-details/image-details.
     ImageGalleryComponent,
     FilterimagesPipe,
     AboutComponent,
-    ImageDetailsComponent
+    ImageDetailsComponent,
+    ViewRegistrationComponent
   ],
   imports: [
     BrowserModule,

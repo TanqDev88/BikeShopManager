@@ -1,0 +1,29 @@
+<!-- // 3) leer el atributo y renderizarlo en una tabla dentro del html , mostrar solo los atributos :
+//  name , email , model ,purchasePrise -->
+<div class="container">
+  <table class="table table-bordered table-inverse">
+      <tr>
+          <th>Owner Name</th>
+          <th>Email</th>
+          <th>Model</th>
+          <th class="text-right">Purchase Prise</th>
+          <th class="text-right">Actions Update / Delete</th>
+      </tr>
+      <tr *ngFor="let bike of bikes">
+          <td>
+              <a [routerLink]="['/admin/view', bike.id]"> {{ bike.name }}</a>
+          </td>
+          <td>{{ bike.email }}</td>
+          <td>{{ bike.model }}</td>
+          <td>{{ bike.purchasePrice }}</td>
+          <td>
+              <a>
+                  <button type="button" (click)="deleteBike(bike.id)" class="btn btn-danger">Delete</button>
+              </a>
+              <a [routerLink]="['/home', bike.id]">
+                  <button type="button" class="btn btn-warning">Update</button>
+              </a>
+          </td>
+      </tr>
+  </table>
+</div>
