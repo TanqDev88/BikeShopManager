@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BikeService } from 'src/app/services/bike.service';
+import { BikeService } from '../../services/bike.service';
 
 @Component({
   selector: 'app-view-registration',
