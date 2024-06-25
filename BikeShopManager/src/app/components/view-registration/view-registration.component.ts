@@ -4,7 +4,7 @@ import { BikeService } from '../../services/bike.service';
 @Component({
   selector: 'app-view-registration',
   templateUrl: './view-registration.component.html',
-  styleUrls: ['./view-registration.component.css']
+  styleUrls: ['./view-registration.component.scss']
 })
 export class ViewRegistrationComponent implements OnInit {
   public bikes: any;

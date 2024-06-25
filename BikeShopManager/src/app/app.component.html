@@ -1,6 +1,12 @@
-<h1>TITULO DE PRUEBA</h1>
+<div style="text-align: center ;">
+  <h3>Bienvenidos a la {{ title }} de Bicicletas</h3>
+</div>
+<!--
+menu -->
+<h6><a [routerLink]="['/home']">Cargar Un Registro Nuevo</a></h6>
+<h6><a [routerLink]="['/admin']">Administrador</a></h6>
+<h6><a [routerLink]="['/galeria']">Ver Galeria</a></h6>
 
-<app-home></app-home>
-
-
-<!-- <app-admin></app-admin> -->
+<!-- <app-image-gallery></app-image-gallery>
+<app-home></app-home> -->
+<router-outlet></router-outlet>
