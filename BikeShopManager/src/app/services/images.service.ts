@@ -10,12 +10,11 @@ export class ImagesService {
 
   constructor() { }
 
-  //metodo que nos retorna el listado completo de imagenes
   getImages() {
     return this.allImages = imagesDetails.slice(0);
   }
 
-  //metodo que recibe un id y busca dicho id dentro del array de bicicletas
+
   getImageById(id: number) {
     return imagesDetails.slice(0).find(image => image.id == id);
   }

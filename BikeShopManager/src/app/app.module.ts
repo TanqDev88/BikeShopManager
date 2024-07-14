@@ -27,10 +27,8 @@ import { FilterimagesPipe } from './pipes/filterimages.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    //agregamos librerias para poder hacer nuestro formulario reactivo
     FormsModule,
     ReactiveFormsModule,
-    //agregamos libreria httpClient para poder realizar peticiones http
     HttpClientModule,
   ],
   providers: [],

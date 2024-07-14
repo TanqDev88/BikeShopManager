@@ -18,12 +18,12 @@ export class AdminComponent {
   getAllBikes(){
     this.bikeService.getAllBikes().subscribe(
       data => {
-        this.bikes = data; //status 200 ok
+        this.bikes = data;
       },
       err => {console.error(err);
 
       },
-      () => console.log('llamada a la api metodo getdikes() finalizada') //http status error
+      () => console.log('llamada a la api metodo gedbikes() finalizada') 
     )
 
   }

@@ -8,7 +8,6 @@ import { AboutComponent } from './components/about/about.component';
 import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 
 
-//en este array vamos a definir las rutas de la app
 const routes: Routes = [
   {
     path: 'home',// localhost:4200/home
@@ -34,11 +33,6 @@ const routes: Routes = [
     path: 'home/:id',// localhost:4200/home/:id
     component: HomeComponent
   },
-  // {
-  //   path: '**',// localhost:4200/kajlsdgkjaskdkgjasd
-  //   component: AboutComponent
-  // },
-
 ];
 
 @NgModule({

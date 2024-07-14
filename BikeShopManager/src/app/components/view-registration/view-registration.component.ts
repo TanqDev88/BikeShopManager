@@ -9,7 +9,6 @@ import { BikeService } from '../../services/bike.service';
 export class ViewRegistrationComponent implements OnInit {
   public bikes: any;
 
-  // 1) inyectar servicio de bikes
   constructor(private bikeService: BikeService) {
   }
 
@@ -18,7 +17,6 @@ export class ViewRegistrationComponent implements OnInit {
   }
 
   getAllBikes() {
-    // 2) llamar al servicio de bikes y traer todas las bikes getAllBikes() y guardarlas en un atributo
     this.bikeService.getAllBikes().subscribe(
       data => { this.bikes = data },
       err => { console.error(err) },

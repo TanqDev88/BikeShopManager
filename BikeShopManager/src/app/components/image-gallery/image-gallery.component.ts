@@ -8,18 +8,16 @@ import { ImagesService } from '../../services/images.service';
   styleUrls: ['./image-gallery.component.scss']
 })
 export class ImageGalleryComponent implements OnInit {
-  // demo pipes
-  // dateObj : Date = new Date();
 
-  //este atributo se lo enviamos al pipe para filtrar la data
+
+
   filterBy: string = 'all';
 
   allImages: Bike[] = [];
 
-  //inyectamos el servicio de imagenes para poder utilizarlo
+
   constructor(private imageService: ImagesService) {
-    //obtenemos el array desde el service previamente inyectado
-    //y lo almacenamos en el atributo de la clase
+
     this.allImages = imageService.getImages();
 
     console.log("todas las imagenes que me retorna el servicio :");
